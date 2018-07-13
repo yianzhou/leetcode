@@ -1,4 +1,4 @@
-package com.yianzhou;
+package solution.algorithm;
 
 public class Main {
 
