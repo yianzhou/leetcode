@@ -1,4 +1,4 @@
-package solution.algorithm;
+package algorithm;
 
 public class Main {
 

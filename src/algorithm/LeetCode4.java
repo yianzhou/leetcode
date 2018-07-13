@@ -1,4 +1,4 @@
-package solution.algorithm;
+package algorithm;
 
 public class LeetCode4 {
     public double findMedianSortedArrays(int[] A, int[] B) {
