@@ -5,7 +5,7 @@ package algorithm;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LeetCode1 {
+public class LeetCode167 {
     public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
         int length = nums.length;
