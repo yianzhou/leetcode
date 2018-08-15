@@ -24,12 +24,15 @@ public class LeetCode32 {
                 stack.push(i); // 当前位置入栈
             }
             else if (stack.isEmpty()) { // 右括号且空栈
-                arrow = i+1; // 记录当前位置
+                arrow = i+1; // 合法括号对中断，箭头指向下一个位置
             }
             else { // 右括号，栈不为空
                 stack.pop();
                 if (stack.isEmpty()) max = Math.max(max, i - arrow + 1);
-                else max = Math.max(max, i - stack.peek());
+                else {
+                    int peek = stack.peek(); // peek 是未被匹配的，最左边的左括号
+                    max = Math.max(max, i - peek);
+                }
             }
         }
 
