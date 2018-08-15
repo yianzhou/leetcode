@@ -26,5 +26,10 @@ public class LeetCode22 {
         }
     }
 
+    public static void main(String args[]) {
+        LeetCode22 solution = new LeetCode22();
+        System.out.println(solution.generateParenthesis(3));
+    }
+
     // output: ["((()))","(()())","(())()","()(())","()()()"]
 }
