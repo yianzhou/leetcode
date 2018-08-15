@@ -14,15 +14,20 @@ public class LeetCode22 {
     }
 
     private void dfs(String combination, int left, int right, int n) {
-        if (left == n && right == n) {
-            result.add(combination);
-            return;
-        }
+        // 深度优先的思路
+        // 优先画左括号，直到左括号的数量为 n，右括号不会出现在左括号前
         if (left < n) {
             dfs(combination+"(", left+1, right, n);
         }
+
+        // 为了使括号成对，当右括号数量小于左括号时，加上右括号
         if (left > right) {
             dfs(combination+")", left, right+1, n);
+        }
+
+        // 当左右括号数量都为 n 时，得到一个结果
+        if (left == n && right == n) {
+            result.add(combination);
         }
     }
 
