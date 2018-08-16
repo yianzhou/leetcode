@@ -6,7 +6,12 @@ Problems | Difficulty | Posts | Best Time Complexity
 ------ | ----- | --- | -----
 [1. Two Sum](https://leetcode.com/problems/two-sum/description/) | Easy | [🐸](https://yianzhou.com/algorithms/2018/07/16/two-sum.html) | O(n)
 [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)| Hard | [🐸](https://yianzhou.com/algorithms/2018/07/11/median-of-two-sorted-array.html) | O(log n)	 
+[12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/description/)| Easy| |
+[13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/)| Easy| |
+[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/)| Easy | |
 [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/) | Easy |[🐸](https://yianzhou.com/algorithms/2018/07/05/merge-two-list.html)
+[22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | Medium | |
+[32. Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/description/) | Hard | |
 [57. Insert Interval](https://leetcode.com/problems/insert-interval/description/) | Hard | 
 [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Medium | | O(log n)
 [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | Medium | | O(n)

@@ -1,13 +1,8 @@
 package algorithm;
 
-import com.sun.tools.javac.util.Assert;
-import jdk.internal.jline.internal.TestAccessible;
-
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
 
-// https://leetcode.com/problems/generate-parentheses/description/
+// https://leetcode.com/problems/longest-valid-parentheses/description/
 
 public class LeetCode32 {
 
