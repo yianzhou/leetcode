@@ -11,7 +11,6 @@ public class LeetCode4 {
 
         // boundary
         if (a==0) return median(B);
-        if (a==1 && b==1) return (A[0]+B[0])/2.0;
 
         if ( (a + b) % 2 == 1 ) { //odd
             int lo = 0, hi = a;
@@ -63,7 +62,6 @@ public class LeetCode4 {
         if (A==null) { return -1; }
         int a = A.length;
         if (a==0) { return -1;}
-        if (a==1) { return A[0]; }
 
         if ( a % 2 == 1 ) {
             return A[a/2];

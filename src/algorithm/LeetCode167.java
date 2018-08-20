@@ -1,6 +1,6 @@
 package algorithm;
 
-// https://leetcode.com/problems/two-sum/description/
+// https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,9 +11,11 @@ public class LeetCode167 {
         int length = nums.length;
         Map<Integer, Integer> map = new HashMap<>();
 
+        // 将数组存进哈希表
         for (int i=0;i<length;i++) {
             map.put(nums[i], i);
         }
+
         for (int i=0;i<length;i++) {
             int diff = target-nums[i];
             if (map.containsKey(diff) && map.get(diff)!=i ) {
@@ -22,6 +24,7 @@ public class LeetCode167 {
                 return result;
             }
         }
+
         return result;
     }
 }

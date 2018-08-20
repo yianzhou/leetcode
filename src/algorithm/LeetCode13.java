@@ -23,7 +23,7 @@ public class LeetCode13 {
     public int romanToInt(String s) {
         int length = s.length();
         int result = 0; // final result
-        int next = 0; // the value next to the current one
+        int next = 0; // the value next to the current one (right hand side)
 
         // 反向遍历
         for (int i=length-1; i>=0; i--) {

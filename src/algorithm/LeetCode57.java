@@ -12,7 +12,7 @@ public class LeetCode57 {
             return intervals;
         }
 
-        ArrayList<Interval> results = new ArrayList<Interval>();
+        ArrayList<Interval> results = new ArrayList<>();
         int insertPos = 0;
 
         for (Interval interval : intervals) {

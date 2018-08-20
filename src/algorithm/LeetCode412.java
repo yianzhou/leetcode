@@ -8,7 +8,7 @@ import java.util.List;
 public class LeetCode412 {
     public List<String> fizzBuzz(int n) {
         // write your code here
-        List<String> result = new ArrayList<String>();
+        List<String> result = new ArrayList<>();
 
         int i = 1;
         while (i<=n) {

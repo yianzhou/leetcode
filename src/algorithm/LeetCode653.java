@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class LeetCode653 {
+
     public boolean findTarget(TreeNode root, int k) {
         if (root==null) return false;
 
@@ -19,6 +20,7 @@ public class LeetCode653 {
         return false;
     }
 
+    // 将树的节点存进哈希表
     private void save(Set<Integer> set, TreeNode node) {
         if (node==null) return;
         set.add(node.val);

@@ -11,9 +11,12 @@ public class LeetCode1 {
         int length = nums.length;
         Map<Integer, Integer> map = new HashMap<>();
 
+        // 将（数值，位置）放进一个哈希表
         for (int i=0;i<length;i++) {
             map.put(nums[i], i);
         }
+
+        // 在哈希表中寻找差值
         for (int i=0;i<length;i++) {
             int diff = target-nums[i];
             if (map.containsKey(diff) && map.get(diff)!=i ) {
@@ -22,6 +25,7 @@ public class LeetCode1 {
                 return result;
             }
         }
+
         return result;
     }
 }

@@ -10,10 +10,13 @@ public class LeetCode169 {
     }
 
     public int majority(int[] nums) {
-        //boundary
-        if (nums.length==0) return -1;
-        if (nums.length==1) return nums[0];
+        int length = nums.length;
 
+        //boundary
+        if (length == 0) return -1;
+        if (length == 1) return nums[0];
+
+        // 将（数字，出现次数）存进哈希表
         HashMap<Integer, Integer> counters = new HashMap<>();
         for (Integer num : nums) {
             if (!counters.containsKey(num)) {
@@ -23,14 +26,11 @@ public class LeetCode169 {
             }
         }
 
-        int _key = 0;
-        int _value = 0;
         for (Integer key : counters.keySet()) {
-            if (counters.get(key) > _value ) {
-                _value = counters.get(key);
-                _key = key;
+            if (counters.get(key) > length/2 ) {
+                return key;
             }
         }
-        return _key;
+        return 0;
     }
 }

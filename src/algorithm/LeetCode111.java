@@ -12,10 +12,9 @@ public class LeetCode111 {
 
     private int _minDepth(TreeNode x) {
         if (x==null) return 0;
-        if (x.left==null && x.right==null) return 1;
-        if (x.left==null && x.right!=null) return 1+_minDepth(x.right);
-        if (x.left!=null && x.right==null) return 1+_minDepth(x.left);
-        if (x.left!=null && x.right!=null) return 1+Math.min(_minDepth(x.left), _minDepth(x.right));
-        return 0;
+        if (x.left==null) return 1+_minDepth(x.right);
+        if (x.right==null) return 1+_minDepth(x.left);
+
+        return 1+Math.min(_minDepth(x.left), _minDepth(x.right));
     }
 }

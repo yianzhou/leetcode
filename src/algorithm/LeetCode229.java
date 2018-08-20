@@ -15,8 +15,7 @@ public class LeetCode229 {
     public List<Integer> majority(int[] nums) {
         List<Integer> result = new ArrayList<>();
 
-
-
+        // 将（数字，出现次数）存进哈希表
         HashMap<Integer, Integer> counters = new HashMap<>();
         for (Integer num : nums) {
             if (!counters.containsKey(num)) {
