@@ -36,33 +36,4 @@ public class LeetCode3 {
 
         return answer;
     }
-
-
-    /*
-    * 因为字符都能用 ASCII 码表示，所以直接使用 int[] 代替哈希表使用，减少了哈希表的寻址时间
-    * 当 HashMap 的 key 为 Character 时，都可以用 int[128] 来替代 map.get(*);
-    * 子字符串表示为 (left, right]
-    */
-
-    public int lengthOfLongestSubstring(String s) {
-        if (s == null) return 0; // boundary
-
-        // variables
-        int[] ascii = new int[128];
-        int answer = 0;
-        int length = s.length();
-
-        if (length == 0) return 0; // boundary
-
-        for (int left = 0, right = 0; right < length; right++) {
-            char c = s.charAt(right);
-
-            left = Math.max(left, ascii[c]);
-            answer = Math.max(answer, right - left + 1);
-            ascii[c] = right  + 1;
-        }
-
-        return answer;
-    }
-
 }
