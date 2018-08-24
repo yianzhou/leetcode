@@ -5,6 +5,10 @@ package algorithm;
 import java.util.Arrays;
 
 public class LeetCode16 {
+    /*
+    1. 先排序
+    2. 遍历数组，头尾指针分别向中间移动。
+     */
     public int threeSumClosest(int[] nums, int target) {
         int res = 0; // result value
         if (nums == null || nums.length < 3) return res; // boundary

@@ -1,6 +1,5 @@
 package algorithm;
 
-
 // https://leetcode.com/problems/longest-palindromic-substring/description/
 
 public class LeetCode5 {
