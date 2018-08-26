@@ -20,7 +20,10 @@ Problems | Difficulty | Remark
 [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) | Medium | LinkedList
 [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/)| Easy | Stack
 [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/) | Easy | LinkedList, Recursion
-[22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | Medium | String, Recursion, DFS? 
+[22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | Medium | String, Recursion, DFS?
+[23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) | Hard | LinkedList, Divide and Conquer
+[24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/) | Medium | LinkedList, Recursion
+[25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) | Hard | LinkedList, Recursion
 [32. Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/description/) | Hard | Stack 
 [57. Insert Interval](https://leetcode.com/problems/insert-interval/description/) | Hard  
 [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Medium | Binary Search

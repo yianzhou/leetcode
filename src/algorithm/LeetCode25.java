@@ -15,14 +15,14 @@ public class LeetCode25 {
         // move k times
         int count = 0;
         while (count < k) {
-            if (curr == null) return head; // number of nodes is NOT multiple of k
+            if (curr == null) return head; // number of nodes is NOT multiple of k, remain as it is
             curr = curr.next;
             count++;
         }
 
-        curr = reverseKGroup(curr, k);
+        curr = reverseKGroup(curr, k); // recursion
 
-        while (count > 0) { // k - 1 times
+        while (count > 0) { // k times
             ListNode second = head.next;
             head.next = curr;
             curr = head;
