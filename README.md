@@ -25,6 +25,7 @@ Problems | Difficulty | Remark
 [24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/) | Medium | LinkedList, Recursion
 [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) | Hard | LinkedList, Recursion
 [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | Easy |
+[27. Remove Element](https://leetcode.com/problems/remove-element/description/) | Easy
 [32. Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/description/) | Hard | Stack 
 [57. Insert Interval](https://leetcode.com/problems/insert-interval/description/) | Hard  
 [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Medium | Binary Search
