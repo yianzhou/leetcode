@@ -9,9 +9,8 @@ public class LeetCode76 {
     /*
     题目描述：If there is such window, you are guaranteed that there will always be only one unique minimum window in S.
     思路：
-    1. 从下标 0 开始伸展，直到包含所有 target 里的字符，确定窗口的右端点；
-    2. 再从下标 0 开始缩小，确定窗口的左端点。
-    3. 滑动窗口
+    1. 右指针开始滑动，直到包含所有 target 里的字符；
+    2. 左指针滑动，当 target 里的字符被排除时，右指针滑动补齐。
      */
 
     public String minWindow(String s, String t) {
