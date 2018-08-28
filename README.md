@@ -30,6 +30,7 @@ Problems | Difficulty | Remark
 [32. Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/description/) | Hard | Stack 
 [57. Insert Interval](https://leetcode.com/problems/insert-interval/description/) | Hard  
 [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Medium | Binary Search
+[76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) | Hard | String, Two Pointers
 [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | Medium | Binary Tree
 [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | Medium | Binary Tree 
 [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | Easy | Binary Tree 

@@ -14,7 +14,6 @@ public class LeetCode76 {
     3. 滑动窗口
      */
 
-
     public String minWindow(String s, String t) {
         // init a HashMap of target
         int[] map = new int[128]; // ASCII
@@ -39,9 +38,9 @@ public class LeetCode76 {
                     wStart = left;
                     wSize = right - left;
                 }
-                map[s.charAt(left)]++; // When char exists in t, increase counter.
+                map[s.charAt(left)]++; // left pointer slides
                 if (map[s.charAt(left)] > 0) {
-                    counter--;
+                    counter--; // When char exists in t, decrease counter.
                 }
                 left++;
             }
