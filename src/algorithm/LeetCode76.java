@@ -26,22 +26,22 @@ public class LeetCode76 {
 
         int left = 0;
         int right = 0;
-        int counter = t.length(); // include all chars in target
+        int counter = 0; // include all chars in target
 
-        while (right < s.length()) {
+        while (right < s.length()) { // right pointer slides
             if (map[s.charAt(right)] > 0) {
-                counter--; // match
+                counter++; // match
             }
             map[s.charAt(right)]--; // If char does not exist in t, will be negative.
             right++;
-            while (counter == 0) { // window contains all chars
+            while (counter == t.length()) { // window contains all chars
                 if ((right - left) < wSize) {
                     wStart = left;
                     wSize = right - left;
                 }
                 map[s.charAt(left)]++; // When char exists in t, increase counter.
                 if (map[s.charAt(left)] > 0) {
-                    counter++;
+                    counter--;
                 }
                 left++;
             }
