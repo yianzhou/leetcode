@@ -27,7 +27,9 @@ Problems | Difficulty | Remark
 [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | Easy |
 [27. Remove Element](https://leetcode.com/problems/remove-element/description/) | Easy
 [28. Implement strStr()](https://leetcode.com/problems/implement-strstr/description/) | Easy | String
-[32. Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/description/) | Hard | Stack 
+[30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/) | Hard | String
+[32. Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/description/) | Hard | Stack
+[33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | Medium | Binary Search
 [57. Insert Interval](https://leetcode.com/problems/insert-interval/description/) | Hard  
 [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Medium | Binary Search
 [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) | Hard | String, Two Pointers

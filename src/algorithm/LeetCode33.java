@@ -1,7 +1,5 @@
 package algorithm;
 
-import java.util.Stack;
-
 // https://leetcode.com/problems/search-in-rotated-sorted-array/description/
 
 public class LeetCode33 {
@@ -80,7 +78,7 @@ public class LeetCode33 {
                 else hi = mid - 1;
             }
         }
-        
+
         return -1;
     }
 }
