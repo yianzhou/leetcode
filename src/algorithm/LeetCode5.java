@@ -13,18 +13,13 @@ public class LeetCode5 {
     private int startIndex = 0;
     private int endIndex = 0;
 
-    private int len = 0; // string's length
-
     public String longestPalindrome(String s) {
-        if (s == null) return null;
-
-        len = s.length();
-
-        if (len <= 1) return s;
+        if (s == null) return null; // boundary
+        if (s.length() <= 1) return s; // boundary
 
         char[] chs = s.toCharArray();
 
-        for (int i = 0; i < len - 1; i++) {
+        for (int i = 0; i < s.length() - 1; i++) {
             extend(chs, i, i); // try to find palindrome which length is odd
             extend(chs, i, i+1); // try to find palindrome which length is even
         }
@@ -35,7 +30,7 @@ public class LeetCode5 {
     }
 
     private void extend(char[] s, int lo, int hi) {
-        while (lo >= 0 && hi < len && s[lo] == s[hi]) {
+        while (lo >= 0 && hi < s.length && s[lo] == s[hi]) {
             lo--;
             hi++;
         }

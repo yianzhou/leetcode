@@ -8,8 +8,8 @@ public class LeetCode19 {
     /*
     1 -> 2 -> 3 -> 4 -> 5;
      */
-    public ListNode removeNthFromEnd(ListNode head, int n) {
 
+    public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode aux = new ListNode(0);
         aux.next = head; // auxiliary node
 

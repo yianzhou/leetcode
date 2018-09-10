@@ -2,12 +2,6 @@ package algorithm;
 
 // https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/
 
-/*
-You are given a string, s, and a list of words, words, that are all of the same length.
-Find all starting indices of substring(s) in s
-that is a concatenation of each word in words exactly once and without any intervening characters.
- */
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -23,8 +17,9 @@ public class LeetCode30 {
 
         // init a HashMap
         Map<String, Integer> map  = new HashMap<>(); // <word, count>
-        for(String str: words)
+        for(String str: words) {
             map.put(str, map.getOrDefault(str, 0) + 1);
+        }
 
         int wLen = words[0].length();
         int cLen = words.length * wLen; // length of a concatenation of each word

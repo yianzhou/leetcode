@@ -10,23 +10,19 @@ public class LeetCode3 {
     /* Keep a HashMap (Character, position).
 	 * keep two pointers which define the max substring - [left, right].
 	 * Move the right pointer to scan through the string, and meanwhile update the HashMap.
-	 * If the character is already in the HashMap,
-	 * then move the left pointer to the right of the same character last found.
+	 * If the character is already in the HashMap, then move the left pointer to the right of the same character last found.
 	 */
 
     public int idea(String s) {
         if (s == null) return 0; // boundary
+        if (s.length() == 0) return 0; // boundary
 
         // variables
         Map<Character, Integer> map = new HashMap<>();
         int answer = 0;
-        int length = s.length();
 
-        if (length == 0) return 0; // boundary
-
-        for (int left = 0, right = 0; right < length; right++) {
+        for (int left = 0, right = 0; right < s.length(); right++) {
             char c = s.charAt(right);
-
             if (map.containsKey(c)) {
                 left = Math.max(left, map.get(c) + 1);
             }
@@ -39,17 +35,14 @@ public class LeetCode3 {
 
     public int lengthOfLongestSubstring(String s) {
         if (s == null) return 0; // boundary
+        if (s.length() == 0) return 0; // boundary
 
         // variables
         int[] map = new int[128]; // default value: 0
         int answer = 0;
-        int length = s.length();
 
-        if (length == 0) return 0; // boundary
-
-        for (int left = 0, right = 0; right < length; right++) {
+        for (int left = 0, right = 0; right < s.length(); right++) {
             char c = s.charAt(right);
-
             if (map[c] > 0) {
                 left = Math.max(left, map[c]); // no need to move the pointer because it already point to the next subscript
             }

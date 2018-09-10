@@ -2,10 +2,9 @@ package algorithm;
 
 // https://leetcode.com/problems/minimum-window-substring/description/
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class LeetCode76 {
+    // TODO: template
+
     /*
     题目描述：If there is such window, you are guaranteed that there will always be only one unique minimum window in S.
     思路：
@@ -20,7 +19,7 @@ public class LeetCode76 {
             map[c]++;
 
         int wStart = -1; // final window start index
-        int wSize = Integer.MAX_VALUE; // final window end index
+        int wSize = Integer.MAX_VALUE; // final window size
 
         int left = 0;
         int right = 0;
