@@ -13,6 +13,16 @@ public class LeetCode31 {
         }
         // now, {j is the largest subscript with aj < aj+1}
 
+        // in case of the largest permutation such as {3, 2, 1}
+        // the next permutation is {1, 2, 3}
+        if (j == 0 && nums[j] >= nums[j+1]) {
+            int r = nums.length - 1;
+            while (r > j) {
+                interchange(nums, r--, j++);
+            }
+            return;
+        }
+
         int k = nums.length - 1;
         while(k > j && nums[j] >= nums[k]) {
             k--;
@@ -25,11 +35,8 @@ public class LeetCode31 {
         // {this puts the tail end of the permutation after the jth position in increasing order}
         int r = nums.length - 1;
         int s = j + 1;
-        if (k == 0) s = k; // in case of the largest permutation such as {3, 2, 1}
         while (r > s) {
-            interchange(nums, r, s);
-            r--;
-            s++;
+            interchange(nums, r--, s++);
         }
     }
 
