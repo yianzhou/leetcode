@@ -19,7 +19,9 @@ public class LeetCode77 {
         }
         // C(n-1,k-1)
         List<List<Integer>> res = this.combine(n - 1, k - 1);
-        res.forEach(e -> e.add(n));
+        for (List<Integer> list : res) {
+            list.add(n);
+        }
         // C(n-1,k)
         res.addAll(this.combine(n - 1, k));
         return res;
