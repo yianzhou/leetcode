@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class LeetCode39 {
-    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+public class LeetCode40 {
+    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         List<List<Integer>> res = new ArrayList<>(); // result
         if (candidates == null || candidates.length == 0) return res; // boundary
 
@@ -23,19 +23,18 @@ public class LeetCode39 {
         }
         else if (target > 0) {
             for (int i = start; i < nums.length; i++) {
-                if (nums[i] > target) {
-                    return; // ⚠️ no need to check ahead
-                }
+                if (i > start && nums[i] == nums[i - 1]) continue;
+                if (nums[i] > target) return; // ⚠️ no need to check ahead
                 sum.add(nums[i]);
-                backtrack(nums, target - nums[i], i, res, sum);
+                backtrack(nums, target - nums[i], i + 1, res, sum);
                 sum.remove(sum.size() - 1);
             }
         }
     }
 
     public static void main(String[] args) {
-        LeetCode39 solution = new LeetCode39();
+        LeetCode40 solution = new LeetCode40();
         int[] nums = {2, 3, 6, 7};
-        solution.combinationSum(nums, 7);
+        solution.combinationSum2(nums, 7);
     }
 }

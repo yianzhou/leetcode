@@ -31,7 +31,8 @@ Problems | Difficulty | Remark
 [31. Next Permutation](https://leetcode.com/problems/next-permutation/description/) | Medium | Counting
 [32. Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/description/) | Hard | Stack
 [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | Medium | Binary Search
-[39. Combination Sum](https://leetcode.com/submissions/detail/181745682/) | Medium | Counting
+[39. Combination Sum](https://leetcode.com/problems/combination-sum/) | Medium | Counting
+[40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | Medium | Counting
 [57. Insert Interval](https://leetcode.com/problems/insert-interval/description/) | Hard  
 [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Medium | Binary Search
 [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) | Hard | String, Two Pointers
